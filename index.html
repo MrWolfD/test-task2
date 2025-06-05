@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер карточек товаров АШАН</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://db.onlinewebfonts.com/c/d676911db6699aa6748801b8ef3cd8b9?family=Sana+Sans+Alt+W00+Regular" rel="stylesheet">
+
+ </head>
+<body>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+                <img src="/Project 2/images/1.jpg" alt="Перец"> 
+                <p> Перец красный, вес </p>
+                <div class="price-container">
+                <p1> 100 ₽</p1>
+                <p2 class="diagonal-strike"> 200,00</p2>
+                </div>
+                <button> В корзину </button>
+            </div>
+             <div class="swiper-slide"> 
+                <img src="/Project 2/images/2.jpg" alt="Перец"> 
+                <p> Черешня красная, вес</p>
+                <div class="price-container">
+                <p1> 100 ₽</p1>
+                <p2 class="diagonal-strike"> 200,00</p2>
+                </div>
+                <button> В корзину </button>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="/Project 2/images/3.jpg" alt="Перец"> 
+                <p> Филе куриное «Петелинка» без кожи охлажденное, ~ 1,2 кг </p>
+                <div class="price-container">
+                <p1> 100,00 ₽</p1>
+                <p2 class="diagonal-strike"> 200,00</p2>
+                </div>
+                <button> В корзину </button>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="/Project 2/images/4.jpg" alt="Перец"> 
+                <p> Грибы Шампиньоны, вес </p>
+                <div class="price-container">
+                <p1> 100 ₽</p1>
+                <p2 class="diagonal-strike"> 200,00</p2>
+                </div>
+                <button> В корзину </button>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="/Project 2/images/5.jpg" alt="Перец"> 
+                <p> Филе бедра индейки «Индилайт» охлажденное, 1 кг </p>
+                <div class="price-container">
+                <p1> 100 ₽</p1>
+                <p2 class="diagonal-strike"> 200,00</p2>
+                </div>
+                <button> В корзину </button>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="/Project 2/images/6.jpg" alt="Перец"> 
+                <p> Виноград Киш-миш белый, вес </p>
+                <div class="price-container">
+                <p1> 100 ₽</p1>
+                <p2 class="diagonal-strike"> 200,00</p2>
+                </div>
+                <button> В корзину </button>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+breakpoints: {
+        0: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 5,
+        }
+    },
+});
+    </script>
+
+</body>
+</html>
