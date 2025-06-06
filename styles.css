@@ -1,10 +1,9 @@
-/* Базовые стили */
 body {
     font-family: 'Sana Sans Alt', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Используем min-height для лучшей гибкости */
+    min-height: 100vh;
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
@@ -19,17 +18,15 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили карточек */
 .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Равномерное распределение элементов */
+    justify-content: space-between;
     height: 100%;
     min-height: 300px;
 }
 
-/* Изображения адаптивны */
 .swiper-slide img {
     width: 100%;
     max-width: 300px;
@@ -41,7 +38,7 @@ body {
 /* Кнопка карточки */
 .swiper-slide button {
     width: 200px;
-    max-width: 90%;  /* На маленьких экранах кнопка не выйдет за пределы карточки */
+    max-width: 90%; 
     height: 50px;
     text-align: center;
     font-size: 20px;
@@ -53,15 +50,13 @@ body {
     cursor: pointer;
 }
 
-/* Контейнер для цен */
 .price-container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    align-items: baseline; /* Выравниваем по базовой линии */
+    align-items: baseline; 
 }
 
-/* Стили для элементов цен (p1 и p2 можно заменить на корректные теги/классы) */
 .price-container p1 {
     font-weight: bold;
     font-size: 24px;
@@ -72,24 +67,21 @@ body {
     opacity: 0.5;
 }
 
-/* Текст карточки */
 .swiper-slide p {
     font-size: 16px;
     max-width: 300px;
     font-style: italic;
 }
 
-/* Диагональное зачеркивание текста */
 .diagonal-strike {
     position: relative;
     display: inline-block;
     background: linear-gradient(-35deg, transparent 50%, red 45%, red 55%, transparent 55%);
 }
 
-/* Стили для кнопок навигации Swiper */
 .swiper-button-next,
 .swiper-button-prev {
-    width: 50px; /* Размер кнопки */
+    width: 50px;
     height: 50px;
     background-color: #eeeeee;
     border-radius: 50%;
@@ -102,7 +94,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Перекрываем стандартные стрелки Swiper */
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 10px;
